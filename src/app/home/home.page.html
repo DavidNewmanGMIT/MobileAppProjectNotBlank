@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tech News
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!--The Tab template was used to create the project-->
+
+<ion-content [fullscreen]="true">
+
+  <h2>Latest Tech News - Short Format News</h2>
+  <br>
+
+  <ul style="list-style: none;">
+    <li *ngFor="let tech of TechNews">
+          <!--Tech News refrences from the method using string interpolation-->
+      <h2>{{tech.title}}</h2>
+      <p>{{tech.description}}</p>
+      <h5>Full article at: <a href="{{tech.url}}" target="_blank">{{tech.source.name}}</a></h5>
+      <p>{{tech.content}}</p>
+      <br>
+      <img height=200 width="200" src="{{tech.urlToImage}}">
+    </li>
+  </ul>
+
+</ion-content>

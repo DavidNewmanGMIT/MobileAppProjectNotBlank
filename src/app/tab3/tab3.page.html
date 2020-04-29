@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Top Tech Apparel
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!--Page for tshirts with email box to be entered with address when tshirts are up for sale-->
+  <h2>Coming Soon Bonga Tech News Brand Shirts</h2>
+  <p>In association with the tech brand Bonga(B.o.n.g.a)
+    Tech News will soon have Tech News X Bonga merch, this is a taste of designs to come. </p>
+
+  <!--Ion gride to contain t shirt images, padding using % as pixel is harder to match up for desktop and mobile view-->
+  <!--I made the t shirts using drawns I made then add effects and put them
+    on tshirts using a custom tshirt site to add them on as images then add on text-->
+  <ion-grid>
+    <ion-row>
+      <ion-col style="padding-left: 10%;">
+        <img src="assets/tshirt001.PNG">
+      </ion-col>
+      <ion-col>
+        <img src="assets/tshirt002.PNG">
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col style="padding-left: 10%;">
+        <img src="assets/tshirt003.PNG">
+      </ion-col>
+      <ion-col>
+        <img src="assets/tshirt004.PNG">
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row style="padding-left: 10%;">
+      <ion-col>
+        <img src="assets/tshirt005.PNG">
+      </ion-col>
+      <ion-col>
+        <img src="assets/tshirt006.PNG">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!--An giveaway for a chance to get a free t shirt using your email-->
+  <div style="padding-left: 20%; padding-right: 20%;">
+    <h2>Newsletter Giveaway.</h2>
+    <p>Sign up using your email bellow and you will not only be the first to know when our Bonga colab shirts are on
+      sale,
+      but also be in the chance of a free Bonga t shirt.
+    </p>
+    <div style="padding-left: 30%; padding-right: 30%;">
+      <label>Email:</label>
+      <input maxlength="35" type="email">
+    </div>
+  </div>
+
+  <br><br>
+
+</ion-content>
